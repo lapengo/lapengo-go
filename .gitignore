@@ -19,6 +19,7 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 tmp/
+#uploads/*
 
 # Go workspace file
 go.work
@@ -27,3 +28,6 @@ go.work
 # tools editor
 .idea
 .vscode
+
+# Custome File
+*.deleted
