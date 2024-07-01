@@ -2,7 +2,7 @@ package handler
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/lapengo/lapengo-go/behavior"
+	"github.com/lapengo/lapengo-go/behavior/_interface"
 	"github.com/lapengo/lapengo-go/internal/helper"
 )
 
@@ -11,10 +11,10 @@ type DefaultHandler interface {
 }
 
 type DefaultHandlerImpl struct {
-	behavior behavior.DefaultBehavior
+	behavior _interface.DefaultInterface
 }
 
-func NewDefaultHandler(b behavior.DefaultBehavior) DefaultHandler {
+func NewDefaultHandler(b _interface.DefaultInterface) DefaultHandler {
 	return &DefaultHandlerImpl{
 		behavior: b,
 	}
