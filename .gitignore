@@ -29,6 +29,7 @@
 .idea
 /**/.idea/*
 .vscode
+temp/* 
 
 # # Custome File
 *.deleted
